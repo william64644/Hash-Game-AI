@@ -29,7 +29,6 @@ class button:
 
     def midle_click(self, event):
         self.bt.config(image=blank_image)
-        print(event, type(event))
 
     def click(self, event):
         self.bt.config(image=blank_image)
