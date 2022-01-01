@@ -15,7 +15,7 @@ grid_spacing = 6
 
 xicon = tk.PhotoImage(file=r'.\icons\x.png')
 oicon = tk.PhotoImage(file=r'.\icons\o.png')
-blank_image = tk.PhotoImage(file=r'.\icons\b.png')
+blank_image = tk.PhotoImage(file=r'.\icons\blank.png')
 
 #=================#
 
