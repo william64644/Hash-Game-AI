@@ -1,6 +1,7 @@
 #================== Setups ==================#
 
 import tkinter as tk
+from threading import *
 
 app = tk.Tk()
 app.title("Hash Game")
@@ -16,7 +17,7 @@ xicon = tk.PhotoImage(file=r'.\icons\x.png')
 oicon = tk.PhotoImage(file=r'.\icons\o.png')
 blank_image = tk.PhotoImage(file=r'.\icons\b.png')
 
-#===========testtesttest=======#
+#=================#
 
 class button:
 
@@ -28,6 +29,7 @@ class button:
 
     def midle_click(self, event):
         self.bt.config(image=blank_image)
+        print(event, type(event))
 
     def click(self, event):
         self.bt.config(image=blank_image)
