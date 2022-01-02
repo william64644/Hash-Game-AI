@@ -3,16 +3,18 @@
 import tkinter as tk
 
 app = tk.Tk()
+app.title("Hash Game")
 app.config(bg="#1b5969")
+app.geometry("350x216")
 
 btx_size = 55
 bty_size = 55
 
 grid_spacing = 6
 
-xicon = tk.PhotoImage(file=r'C:\Users\Night\Documents\Python\icons\x.png')
-oicon = tk.PhotoImage(file=r'C:\Users\Night\Documents\Python\icons\o.png')
-blank_image = tk.PhotoImage(file=r'C:\Users\Night\Documents\Python\icons\b.png')
+xicon = tk.PhotoImage(file=r'.\icons\x.png')
+oicon = tk.PhotoImage(file=r'.\icons\o.png')
+blank_image = tk.PhotoImage(file=r'.\icons\b.png')
 
 #===========testtesttest=======#
 
@@ -30,9 +32,10 @@ class button:
     def click(self, event):
         self.bt.config(image=blank_image)
 
-    def __init__(self, icon, gridx, gridy):
 
-        self.icon = icon
+
+    def __init__(self, gridx, gridy):
+
         self.gridx = gridx
         self.gridy = gridy
         self.bt = tk.Button(padx=btx_size, pady=bty_size, image=blank_image)
@@ -42,16 +45,16 @@ class button:
         self.bt.bind('<Button-3>', self.right_click)
 
 
-bt00 = button(None, 0, 0)
-bt01 = button(None, 0, 1)
-bt02 = button(None, 0, 2)
+bt00 = button(0, 0)
+bt01 = button(0, 1)
+bt02 = button(0, 2)
 
-bt10 = button(None, 1, 0)
-bt11 = button(None, 1, 1)
-bt12 = button(None, 1, 2)
+bt10 = button(1, 0)
+bt11 = button(1, 1)
+bt12 = button(1, 2)
 
-bt20 = button(None, 2, 0)
-bt21 = button(None, 2, 1)
-bt22 = button(None, 2, 2)
+bt20 = button(2, 0)
+bt21 = button(2, 1)
+bt22 = button(2, 2)
 
 app.mainloop()#asdasd
