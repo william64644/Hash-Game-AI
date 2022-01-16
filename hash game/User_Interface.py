@@ -13,10 +13,10 @@ bty_size = 55
 
 grid_spacing = 6
 
-xicon = tk.PhotoImage(file=r'.\icons\x.png')
-oicon = tk.PhotoImage(file=r'.\icons\o.png')
-blank_image = tk.PhotoImage(file=r'.\icons\blank.png')
-wipe_icon = tk.PhotoImage(file=r'.\icons\wipe-icon.png')
+xicon = tk.PhotoImage(file=r'Hash-Game-AI\icons\x.png')
+oicon = tk.PhotoImage(file=r'Hash-Game-AI\icons\o.png')
+blank_image = tk.PhotoImage(file=r'Hash-Game-AI\icons\blank.png')
+wipe_icon = tk.PhotoImage(file=r'Hash-Game-AI\icons\wipe-icon.png')
 
 #=======================================#
 
